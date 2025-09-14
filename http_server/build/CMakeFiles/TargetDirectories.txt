@@ -1,5 +1,0 @@
-/home/pradyunn-kale/Projects/baremetalstm32/http_server/build/CMakeFiles/stm32h753zi-baremetal.dir
-/home/pradyunn-kale/Projects/baremetalstm32/http_server/build/CMakeFiles/flash.dir
-/home/pradyunn-kale/Projects/baremetalstm32/http_server/build/CMakeFiles/debug.dir
-/home/pradyunn-kale/Projects/baremetalstm32/http_server/build/CMakeFiles/edit_cache.dir
-/home/pradyunn-kale/Projects/baremetalstm32/http_server/build/CMakeFiles/rebuild_cache.dir
