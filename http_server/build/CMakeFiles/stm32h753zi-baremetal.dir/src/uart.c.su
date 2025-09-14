@@ -1,0 +1,3 @@
+/home/pradyunn-kale/Projects/baremetalstm32/http_server/src/uart.c:3:6:uart_init	0	static
+/home/pradyunn-kale/Projects/baremetalstm32/http_server/src/uart.c:22:6:uart_putchar	8	static
+/home/pradyunn-kale/Projects/baremetalstm32/http_server/src/uart.c:35:6:uart_putstring	16	static

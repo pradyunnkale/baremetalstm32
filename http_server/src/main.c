@@ -24,24 +24,9 @@ int main() {
 
     while (1) {
         
-        uint32_t isr = *(volatile uint32_t*)(USART3_BASE + 0x1C);
-
-        if (isr & (1 << 7)) {
-            
             uart_putstring("Hello World!\r\n");
 
-            *(volatile uint32_t*)(GPIOB_BASE + 0x18) = (1 << 0);
-            simple_delay(200000);
-            *(volatile uint32_t*)(GPIOB_BASE + 0x18) = (1 << 16);
-            simple_delay(200000);
-        } else {
-
-            *(volatile uint32_t*)(GPIOB_BASE + 0x18) = (1 << 0);
-            simple_delay(4000000);
-            *(volatile uint32_t*)(GPIOB_BASE + 0x18) = (1 << 16);
-            simple_delay(4000000);
-        }
-
+            simple_delay(1000000);
 
     }
 
