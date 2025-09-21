@@ -1,0 +1,3 @@
+/home/pradyunn-kale/Projects/baremetalstm32/http_server/src/ethernet.c:31:6:ethernet_init	12	static
+/home/pradyunn-kale/Projects/baremetalstm32/http_server/src/ethernet.c:170:6:ethernet_transfer	24	static
+/home/pradyunn-kale/Projects/baremetalstm32/http_server/src/ethernet.c:208:6:ethernet_rx_handler	8	static

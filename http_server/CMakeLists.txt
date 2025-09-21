@@ -28,18 +28,26 @@ add_compile_options(
 set(CMAKE_C_FLAGS_DEBUG "-Og -g3 -DDEBUG")
 set(CMAKE_C_FLAGS_RELEASE "-O2 -DNDEBUG")
 
-# Include directories
-include_directories(inc)
+# Include directories (target-scoped)
+
 
 # Source files
 set(SOURCES
     src/main.c
     src/startup.s
     src/uart.c
+    src/ethernet.c
 )
 
 # Create executable
 add_executable(${PROJECT_NAME} ${SOURCES})
+
+# Set include dirs for this target only
+target_include_directories(${PROJECT_NAME} PRIVATE 
+    ${CMAKE_SOURCE_DIR}/inc
+    ${CMAKE_SOURCE_DIR}/third_party/STM32CubeH7/Drivers/CMSIS/Device/ST/STM32H7xx/Include
+    ${CMAKE_SOURCE_DIR}/third_party/STM32CubeH7/Drivers/CMSIS/Include
+)
 
 # Linker script
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/linker/stm32h753zi.ld)
